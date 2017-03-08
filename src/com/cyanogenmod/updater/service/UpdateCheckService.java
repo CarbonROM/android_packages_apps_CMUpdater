@@ -244,7 +244,7 @@ public class UpdateCheckService extends IntentService
                 break;
             case Constants.UPDATE_TYPE_NIGHTLY:
             default:
-                channels.put("nightly");
+                channels.put("weekly");
                 break;
         }
         JSONObject params = new JSONObject();
