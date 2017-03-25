@@ -922,7 +922,7 @@ public class UpdatesSettings extends PreferenceActivity implements
         String date = DateFormat.getLongDateFormat(this).format(lastCheck);
         String time = DateFormat.getTimeFormat(this).format(lastCheck);
 
-        String cmReleaseType = Constants.CM_RELEASETYPE_NIGHTLY;
+        String cmReleaseType = Constants.CM_RELEASETYPE_WEEKLY;
         int updateType = Utils.getUpdateType();
         if (updateType == Constants.UPDATE_TYPE_SNAPSHOT) {
             cmReleaseType = Constants.CM_RELEASETYPE_SNAPSHOT;

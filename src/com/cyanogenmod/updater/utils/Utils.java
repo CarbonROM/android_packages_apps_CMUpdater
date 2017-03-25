@@ -136,12 +136,12 @@ public class Utils {
     }
 
     public static int getUpdateType() {
-        int updateType = Constants.UPDATE_TYPE_NIGHTLY;
+        int updateType = Constants.UPDATE_TYPE_WEEKLY;
         try {
             String cmReleaseType = SystemProperties.get(
                     Constants.PROPERTY_CM_RELEASETYPE);
 
-            // Treat anything that is not SNAPSHOT as NIGHTLY
+            // Treat anything that is not SNAPSHOT as WEEKLY
             if (!cmReleaseType.isEmpty()) {
                 if (TextUtils.equals(cmReleaseType,
                         Constants.CM_RELEASETYPE_SNAPSHOT)) {

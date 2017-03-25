@@ -39,7 +39,7 @@ public class UpdatesSettingsTv extends UpdatesSettings {
         long lastCheck = prefs.getLong(Constants.LAST_UPDATE_CHECK_PREF, 0);
         String date = DateFormat.getLongDateFormat(this).format(lastCheck);
         String time = DateFormat.getTimeFormat(this).format(lastCheck);
-        String cmReleaseType = Constants.CM_RELEASETYPE_NIGHTLY;
+        String cmReleaseType = Constants.CM_RELEASETYPE_WEEKLY;
         int updateType = Utils.getUpdateType();
         if (updateType == Constants.UPDATE_TYPE_SNAPSHOT) {
             cmReleaseType = Constants.CM_RELEASETYPE_SNAPSHOT;
